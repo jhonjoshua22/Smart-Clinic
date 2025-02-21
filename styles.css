@@ -49,7 +49,7 @@ a:active {
 	border-radius: 5vw;
 
 }
-.consultn a, .aboutn a, .featsn a, .contactn a{
+.consultn a, .aboutn a, .recordsn a, .contactn a{
 	float:left;
 	width:8%;
 	height: 3.8vw;
@@ -89,7 +89,7 @@ a:active {
         background-position: 0% 50%;
       }
 }
-.consultn a:hover, .aboutn a:hover, .featsn a:hover, .contactn a:hover{
+.consultn a:hover, .aboutn a:hover, .recordsn a:hover, .contactn a:hover{
 	background: white;
 	color: black;
 }
@@ -155,6 +155,7 @@ input {
 	margin: 0 4vw;
 	font-size: 1vw;
 	border: none;
+        cursor: pointer;
 }
 
 .forgot-password {
