@@ -87,7 +87,7 @@ a:active {
 	line-height: 13vw;
 	font-weight: 800;
 	font-size: 16vw;
-	background: url('C:/Users/acer/Downloads/Smart Clinic/Images/home.jpg');
+	background: url('images/home.jpg');
       	background-size: 120% 120%;
 	-webkit-text-stroke: 0.2vw rgba(100, 100, 200, 0.25);
 	text-shadow: 2px 2px 5px rgba(100, 100, 150, 0.3);
