@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box;
+	margin: 0vw;
+}
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	background: #F0F2F5;
+}
+
+a:link {
+ 	text-decoration: none;
+}
+a:visited {
+	color:#232323;
+	text-decoration: none;
+}
+a:hover {
+  	text-decoration: none;
+}
+div.navbg:hover {
+  	background-color:rgb(70, 190, 190);
+}
+a:active {
+ 	 color: #232323;
+	 text-decoration: none;
+}
+
+.nav {
+	width: 100%;
+	top:0;
+	background: white;
+	z-index: 2;
+	height: 4.5vw;
+	left:0;
+	position: fixed;
+	color: #002374;
+	border-radius: 0 0 0.8vw 0.8vw;
+}
+
+.time {
+	float:right;
+	width:25%;
+	height: 4vw;
+	top:0;
+	right: 0;
+	margin: 0.8vw 1.3vw;
+	padding: 0.75vw 1vw;
+	text-align: right;
+	font-size: 1.8vw;
+	font-weight: bold;
+	transition-duration: 0.5s;
+	border-radius: 5vw;
+
+}
+
+.name {
+	padding: 0.8vw 9vw;
+	float: left;
+	width:70%;
+   	font-size: 3.2vw;
+   	font-weight: bold;
+	word-spacing: 1vw;
+}
+
+.sc {
+	float:left;
+	width:100%;
+	margin:0vw;
+	text-align: left;
+	font-size: 1.8vw;
+	transition-duration: 0.5s;
+}
+
+.sc img {
+	margin: 7vw 3vw 1vw;
+	border-radius: 5vw 1vw 1vw 5vw;
+	width: inherit;
+}
+
+.login {
+	border-radius: 0.3vw 5vw 5vw 0.3vw;
+	width: 60vw;
+	height: 38.4vw;
+	margin: 7vw 3vw 1vw;
+	float: right;
+	text-align: center;
+	padding: 5vw;
+	background: url('C:/Users/acer/Downloads/Smart Clinic/Images/home.jpg');
+	background-size: cover;
+}
+
+label {
+        display: block;
+	padding: 1vw;
+        font-weight: bold;
+	color: white;
+}
+
+input {
+	width: 50%;
+	height: 3.7vw;
+        border: none;
+        border-radius: 4vw;
+	position: center;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+.login button {
+        width: 4vw;
+	height: 4vw;
+	margin-top: 4vw;
+        color: black;
+	background: white;
+	box-shadow: 0 2vw 5vw rgba(0, 0, 150, 0.6);
+	border: none;
+        border-radius: 20vw;
+        cursor: pointer;
+        font-size: 1.3vw;
+}
+	
+.login a {
+	margin: 0 4vw;
+	font-size: 1.3vw;
+	border: none;
+        cursor: pointer;
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.forgot-password {
+        text-align: right;
+        margin-top: 10px;
+}
+
+.forgot-password a {
+        color: #007bff;
+        text-decoration: none;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.7vw;
+}
