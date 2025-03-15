@@ -86,7 +86,7 @@ a:active {
 	float: right;
 	text-align: center;
 	padding: 5vw;
-	background: url('images/home.jpg');
+	background-image: url('home.jpg');
 	background-size: cover;
 }
 
