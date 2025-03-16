@@ -48,69 +48,16 @@
 	<h4 id="news">News</h2>
 	<div class="news"><p>No news at this moment</p></div>
 
-	<h4>Find a Clinic Near You</h4>
-<div class="search-container">
-        <input id="search-box" type="text" placeholder="Enter location..." oninput="fetchSuggestions()">
+	<h4 id="clinics">Find a Clinic Near You</h4>
+	<div class="search-container">
+       		<input id="search-box" type="text" placeholder="Enter location..." oninput="fetchSuggestions()">
+    	</div>
+        <div id="suggestions"></div>
+    	<div id="map"></div>
 
-    </div>
-    <div id="suggestions"></div>
-    <div id="map"></div>
+    	<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    	<script src="script.js"></script> 
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        var accessToken = "pk.1da2a6c2605a05780b17d7810c280ae0"; // Replace with your token
-        var map = L.map('map').setView([14.5995, 120.9842], 12); // Default to Manila
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
-
-        function searchLocation() {
-            var query = document.getElementById('search-box').value;
-            if (!query) { alert("Please enter a location!"); return; }
-            fetch(`https://us1.locationiq.com/v1/search.php?key=${accessToken}&q=${query}&format=json`)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.length > 0) {
-                        var lat = data[0].lat, lon = data[0].lon;
-                        L.marker([lat, lon]).addTo(map).bindPopup(query).openPopup();
-                        map.setView([lat, lon], 15);
-                    } else {
-                        alert("Location not found!");
-                    }
-                })
-                .catch(error => console.error("Error:", error));
-        }
-
-        function fetchSuggestions() {
-            var query = document.getElementById('search-box').value;
-            if (query.length < 3) { document.getElementById('suggestions').style.display = "none"; return; }
-            fetch(`https://us1.locationiq.com/v1/autocomplete.php?key=${accessToken}&q=${query}&format=json`)
-                .then(response => response.json())
-                .then(data => {
-                    var suggestionsBox = document.getElementById('suggestions');
-                    suggestionsBox.innerHTML = "";
-                    data.forEach(location => {
-                        var div = document.createElement("div");
-                        div.textContent = location.display_name;
-                        div.onclick = function () {
-                            document.getElementById('search-box').value = location.display_name;
-                            searchLocation();
-                            suggestionsBox.style.display = "none";
-                        };
-                        suggestionsBox.appendChild(div);
-                    });
-                    suggestionsBox.style.display = "block";
-                })
-                .catch(error => console.error("Error:", error));
-        }
-
-        document.addEventListener("click", function(event) {
-            if (!event.target.closest(".search-container")) {
-                document.getElementById('suggestions').style.display = "none";
-            }
-        });
-    </script>
 	<div class="contact" id="contact">Contacts</div>
 </body>
 </html>
