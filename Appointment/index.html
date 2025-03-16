@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Book an Appointment</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" type="image/x-icon" href="C:\Users\acer\Desktop\Smart Clinic\images\favicon.ico">
+		<script src="script.js"></script>
+	</head>
+<body>
+	<div class="nav">
+		<div class="name"><a href="C:\Users\acer\Desktop\Smart Clinic\Source Code\Home\index.html">Home</a></div>
+		<input type="text" placeholder="Search..." id="search-bar">
+       		<button id="search-button">🔍</button>
+		<div class="time" id="time">localTime();</div>
+	</div>
+
+	<h2>Appointment Form</h2>
+	<div class="bookform">
+	<form>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+		<br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+	<label for="clinic">Clinic:</label>
+            <select id="clinic" name="clinic" required>
+                <option value="">Select a clinic</option>
+                <option value="clinic1">Clinic 1</option>
+                <option value="clinic2">Clinic 2</option>
+                <option value="clinic3">Clinic 3</option>
+            </select>
+	<br>
+            <label for="date">Date of Appointment:</label>
+            <input type="date" id="date" name="date" required>
+         <label for="time">Time:</label>
+            <select id="atime" name="time" required>
+                <option value="">Choose</option>
+                <option value="morning">8AM to 11AM</option>
+                <option value="noon">11AM to 2PM</option>
+                <option value="Afternoon">2PM to 5PM</option>
+            </select>
+		<br><br>
+            <label for="symptoms"></label>
+            <textarea id="symptoms" name="symptoms" rows="4" required>My symptoms are </textarea>
+		<br>
+            <button type="submit">Book Appointment</button>
+        </form>
+	</div>
+
+	<div class="contact" id="contact">Contacts</div>
+</body>
+</html>
