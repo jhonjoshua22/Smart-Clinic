@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smart Clinic</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" type="image/x-icon" href="images\favicon.ico">
+		<script src="script.js"></script>
+	</head>	
+<body>
+    <div class="nav">
+        <div class="name">Smart Clinic</div>
+        <div class="time" id="time"></div>
+    </div>
+
+    <div class="sc">
+        <div style="width: 30vw; float:left; margin-top: 4.5vw">
+            <img src="images/SClogo.png">
+        </div>
+
+        <form action="doclogin.php" method="POST">
+    		<div class="login">
+        	<input type="email" id="email" name="email" placeholder="Enter your email" required>
+        	<br><br>
+        	<input type="password" id="password" name="password" placeholder="Enter your password" required>
+        	<br><button type="submit">GO</button><br>
+        	<br><br><br>
+        	<a href="#">Forgot password?</a>
+    		</div>
+	</form>
+		</div>
+
+    <div class="contact" id="contact">Contacts</div>
+    </div>
+
+    <footer>&copy; 2025 Smart Clinic. All Rights Reserved.</footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smart Clinic</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" type="image/x-icon" href="images\favicon.ico">
+		<script src="script.js"></script>
+	</head>	
+<body>
+    <div class="nav">
+        <div class="name">Smart Clinic</div>
+        <div class="time" id="time"></div>
+    </div>
+
+    <div class="sc">
+        <div style="width: 30vw; float:left; margin-top: 4.5vw">
+            <img src="images/SClogo.png">
+        </div>
+
+        <form action="login.php" method="POST">
+    		<div class="login">
+        	<input type="email" id="email" name="email" placeholder="Enter your email" required>
+        	<br><br>
+        	<input type="password" id="password" name="password" placeholder="Enter your password" required>
+        	<br><button type="submit">GO</button><br>
+        	<br><br><br>
+        	<a href="#">Forgot password?</a>
+		<a href="/Login/doclogin.html">Login as a Doctor</a>
+    		</div>
+	</form>
+	
+	<br><br>
+	<div style="float: left; width: 100%; text-align: center">
+		<br><h2 style="color: white">Create an Account</h2><br>
+		<form action="register.php" method="POST" enctype="multipart/form-data">
+    			<input type="text" name="first_name" placeholder="First Name" required style="width:20%">
+   			<input type="text" name="last_name" placeholder="Last Name" required style="width:20%"><br><br>
+    			<input type="email" name="email" placeholder="Email" required style="width:25%">
+    			<input type="text" name="phone" placeholder="Phone" required style="width:15%"><br><br>
+    			<select name="gender" required style="height: 3vw; width: 15%">
+        			<option value="">Select Gender</option>
+        			<option value="Male">Male</option>
+        			<option value="Female">Female</option>
+    			</select>
+    			<input type="date" name="birth_date" required style="height: 3vw; width: 25%"><br><br>
+    			<input type="text" name="address" placeholder="Address" required style="width: 40%"><br><br>
+    			<input type="password" name="password" placeholder="Password" required style="width:20%"><br><br>
+			
+    			<button type="submit" style="height: 4vw; width:10%">Register</button>
+		</form>
+
+	</div>
+
+        <div class="contact" id="contact">Contacts</div>
+    </div>
+
+    <footer>&copy; 2025 Smart Clinic. All Rights Reserved.</footer>
+</body>
+</html>
